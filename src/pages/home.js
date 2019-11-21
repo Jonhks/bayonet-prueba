@@ -4,22 +4,23 @@ import Footer from '../Components/Footer'
 import Loading from '../Components/Loading'
 import Principales from '../Components/Principales'
 import useFetch from '../hook/useFetch'
-import Grafica from '../Components/Grafica'
+// import Grafica from '../Components/Grafica'
+import SelectComponent from '../Components/SelectComponent'
 
 
 
 export default  () => {
-
+  // const {seleccion } = props
   // const bestRepos = useFetch('https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc')
   const bestRepos = useFetch('https://api.github.com/search/repositories?q=sort=stars&order=desc')
   const data = bestRepos.result
- 
   return (
   data ? (
     <>
       <Row>
         <Col span={24}>
-          <Grafica data={data} /> 
+         <SelectComponent />
+          {/* <Grafica data={data} />  */}
         </Col>
       </Row>
       <Row>
