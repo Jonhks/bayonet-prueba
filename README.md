@@ -1,3 +1,64 @@
+# Prueba tecnica Bayonet
+​
+[Prueba Bayonet](https://jonhks.github.io/bayonet-prueba/) Es una plataforma donde podemos ver los mejores repositorios ranqueados, filtrar por lenguajes como Go, Python, Javascript, Ruby y Todos. Tambien podemos ver el número de commits del repositorio oficial de [Facebook/React](https://github.com/facebook/react/)
+​
+* URL de producción: https://jonhks.github.io/bayonet-prueba/​
+​
+## Dependencias
+​
+* `node` 
+* `yarn`
+* `antd`
+* `chart.js`
+* `node-sass`
+* `react-router-dom`
+
+​
+## Instalación local
+​
+```sh
+# clona repo desde tu fork
+git clone git@github.com:<github-username>/bayonet-prueba.git
+​
+# entra en directorio de tu copia local del repo
+cd bayonet-prueba
+​
+# instala las dependencias de Node.js declaradas en `package.json`
+yarn install
+​
+# agrega el archivo .env (siguiendo el ejemplo de .env.example)
+​
+# arranca localmente
+yarn start
+```
+​
+Por default la aplicación corre en el puerto 3000:
+​
+```shell
+http://localhost:3000
+```
+​
+​
+## Integraciones
+​
+* Sass
+* Ant Design
+* Chart.js
+​
+​
+​
+## Team
+​
+* Dev [jonathan Parra](https://github.com/jonhks)
+​
+​
+## Soporte
+​
+Si encuentras algún *bug*, abre un *issue* aquí https://github.com/Jonhks/bayonet-prueba
+
+
+# Readme creado por react-create-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

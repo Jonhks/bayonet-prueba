@@ -17,7 +17,7 @@ export default (props) => {
   if (value === 'Todos') {
     const bestRepos = useFetch('https://api.github.com/search/repositories?q=sort=stars&order=desc')
     data = bestRepos.result
-    // setData(value)
+    console.log(data)
   } else {
   const bestRepos = useFetch(`https://api.github.com/search/repositories?q=language:${value}&sort=stars&order=desc`)
   data = bestRepos.result
@@ -41,7 +41,7 @@ return (
         <Grafica data ={data}/>
       </Col>
       </Row>
-     {data.items.map(repo=>(
+     {data.items.slice(0, 20).map(repo=>(
       <Col key={repo.id} span={8} className="card-repo">
         <Cards repo={repo} />
       </Col>

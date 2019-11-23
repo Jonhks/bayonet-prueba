@@ -1,11 +1,13 @@
 import React from 'react'
-import { Doughnut, Bar, Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 import './Grafica.sass'
 
 export default (props) => {
-  const { data } = props
-  let items = ["1", "2"]
+  let mensaje = 'Populares'
+  const { data, commits } = props
+
+  let items = []
   let languages = ''
 
   if(!data) {
@@ -20,14 +22,19 @@ export default (props) => {
      }
   }
 
+  if(commits != null){
+    mensaje = 'Commits a Github'
+    items = commits.slice(0,10).map((item) => item[1])
+    languages = commits.slice(0, 10).map((i, index) => `Semana ${index + 1}`)
+    console.log(items)
+  }
+  // !commits ? console.log('no llego nada') : console.log(commits.slice(0,10));
   
-
-
   const dataGrafic = {
     labels: languages,
     datasets: [
       {
-        label: 'Populares',
+        label: `${mensaje}`,
         fill: false,
         lineTension: 0.1,
         backgroundColor: 'rgba(75,192,192,0.4)',

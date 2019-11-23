@@ -2,16 +2,12 @@ import React, {useState} from 'react';
 import { Row, Col } from 'antd'
 import Footer from '../Components/Footer'
 import Principales from '../Components/Principales'
-// import useFetch from '../hook/useFetch'
-// import Grafica from '../Components/Grafica'
-// import SelectComponent from '../Components/SelectComponent'
 import { Select } from 'antd';
 
 
 
 
 export default  () => {
-  // const {seleccion } = props
 
   return (
     <>
