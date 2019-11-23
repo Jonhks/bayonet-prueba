@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bayonet-prueba/precache-manifest.b52bec7832d95f65337c4c2170880949.js"
+  "/bayonet-prueba/precache-manifest.c5610a0eb79f5aaddbbc88fcca273307.js"
 );
 
 self.addEventListener('message', (event) => {
