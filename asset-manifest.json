@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bayonet-prueba/static/css/main.300c1da0.chunk.css",
+    "main.css": "/bayonet-prueba/static/css/main.aa48478c.chunk.css",
     "main.js": "/bayonet-prueba/static/js/main.44282535.chunk.js",
     "main.js.map": "/bayonet-prueba/static/js/main.44282535.chunk.js.map",
     "runtime-main.js": "/bayonet-prueba/static/js/runtime-main.63fbb85e.js",
@@ -9,16 +9,16 @@
     "static/js/2.769fa10c.chunk.js": "/bayonet-prueba/static/js/2.769fa10c.chunk.js",
     "static/js/2.769fa10c.chunk.js.map": "/bayonet-prueba/static/js/2.769fa10c.chunk.js.map",
     "index.html": "/bayonet-prueba/index.html",
-    "precache-manifest.c5610a0eb79f5aaddbbc88fcca273307.js": "/bayonet-prueba/precache-manifest.c5610a0eb79f5aaddbbc88fcca273307.js",
+    "precache-manifest.64c5c8e476e60e4d76b0efc734e443e2.js": "/bayonet-prueba/precache-manifest.64c5c8e476e60e4d76b0efc734e443e2.js",
     "service-worker.js": "/bayonet-prueba/service-worker.js",
     "static/css/2.fb9ed26a.chunk.css.map": "/bayonet-prueba/static/css/2.fb9ed26a.chunk.css.map",
-    "static/css/main.300c1da0.chunk.css.map": "/bayonet-prueba/static/css/main.300c1da0.chunk.css.map"
+    "static/css/main.aa48478c.chunk.css.map": "/bayonet-prueba/static/css/main.aa48478c.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.63fbb85e.js",
     "static/css/2.fb9ed26a.chunk.css",
     "static/js/2.769fa10c.chunk.js",
-    "static/css/main.300c1da0.chunk.css",
+    "static/css/main.aa48478c.chunk.css",
     "static/js/main.44282535.chunk.js"
   ]
 }
