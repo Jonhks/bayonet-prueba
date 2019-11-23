@@ -18,7 +18,6 @@ export default (props) => {
      if(items[0] === 1 ){
       items = data.items.map( item  => item.forks)
       languages = data.items.map( item  => item.owner.login )
-      // .filter( element => element != null)
      }
   }
 
@@ -28,7 +27,6 @@ export default (props) => {
     languages = commits.slice(0, 10).map((i, index) => `Semana ${index + 1}`)
     console.log(items)
   }
-  // !commits ? console.log('no llego nada') : console.log(commits.slice(0,10));
   
   const dataGrafic = {
     labels: languages,
