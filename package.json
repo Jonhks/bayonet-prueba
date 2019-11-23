@@ -2,7 +2,7 @@
   "name": "prueba-bayonet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jonhks.github.io/bayonet-prueba",
+  "homepage": "https://jonhks.github.io/bayonet-prueba/",
   "dependencies": {
     "antd": "^3.25.2",
     "chart.js": "^2.9.3",

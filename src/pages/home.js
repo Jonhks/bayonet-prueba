@@ -1,38 +1,64 @@
-import React,{useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Row, Col } from 'antd'
 import Footer from '../Components/Footer'
-import Loading from '../Components/Loading'
 import Principales from '../Components/Principales'
-import useFetch from '../hook/useFetch'
+// import useFetch from '../hook/useFetch'
 // import Grafica from '../Components/Grafica'
-import SelectComponent from '../Components/SelectComponent'
+// import SelectComponent from '../Components/SelectComponent'
+import { Select } from 'antd';
+
 
 
 
 export default  () => {
   // const {seleccion } = props
-  // const bestRepos = useFetch('https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc')
-  const bestRepos = useFetch('https://api.github.com/search/repositories?q=sort=stars&order=desc')
-  const data = bestRepos.result
+
   return (
-  data ? (
     <>
       <Row>
         <Col span={24}>
          <SelectComponent />
-          {/* <Grafica data={data} />  */}
-        </Col>
-      </Row>
-      <Row>
-        <Col span={24}>
-          <Principales data={data} />
         </Col>
       </Row>
       <Footer />
     </>
-  ) : (
-    <Col span={24}><Loading /></Col>
-    )
     )
     
+  }
+
+
+  const SelectComponent = () => {
+  const { Option } = Select;
+
+  const [value, setValue] = useState('Todos')
+    
+    return (
+      <>
+      <Row>
+        <Col span={4} offset={20}>
+          <Select
+            showSearch
+            style={{ width: 200 , left: 0}}
+            placeholder="Select a language"
+            optionFilterProp="children"
+            onChange={(event) => {
+              setValue(event)
+            }}
+            filterOption={(input, option) =>
+              option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+            }
+          >
+            <Option value="Todos">Todos</Option>
+            <Option value="Javascript">JavaScript</Option>
+            <Option value="Go">Go</Option>
+            <Option value="Ruby">Ruby</Option>
+            <Option value="Python">Python</Option>
+          </Select>
+        </Col>
+      </Row>
+      <Row>
+        <Principales value={value} />
+      </Row>
+      </>
+    )
   }
